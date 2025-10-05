@@ -1,23 +1,23 @@
 package model;
-import javax.jws.WebMethod;
-import javax.jws.WebService;
-import javax.jws.soap.SOAPBinding;
+
+import jakarta.jws.WebService;
+import jakarta.jws.WebMethod;
+import java.util.List;
 
 @WebService
-@SOAPBinding(style = SOAPBinding.Style.RPC)
-
 public interface GestionEtudiantService {
-	@WebMethod
-	public boolean AjouterEtudiant(Etudiant e)  ;
-	
-	
-	
-	@WebMethod
-	public Etudiant RecupererEtudiantParId(int id);
-	
-	
-
-	
-	@WebMethod
-	public Etudiant[] RecupererTousLesEtudiants() ;
+    @WebMethod
+    boolean ajouterEtudiant(Etudiant e);
+    
+    @WebMethod
+    boolean supprimerEtudiant(int id);
+    
+    @WebMethod
+    boolean modifierEtudiant(Etudiant e);
+    
+    @WebMethod
+    Etudiant getEtudiant(int id);
+    
+    @WebMethod
+    List<Etudiant> getAllEtudiants();
 }
