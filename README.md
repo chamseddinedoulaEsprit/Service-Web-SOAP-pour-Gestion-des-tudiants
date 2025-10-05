@@ -1,4 +1,4 @@
-# 🎓 SOA4 - Système de Gestion des Étudiants via Web Service SOAP
+# 🎓  Système de Gestion des Étudiants via Web Service SOAP
 
 ![Java](https://img.shields.io/badge/Java-11-orange)
 ![Maven](https://img.shields.io/badge/Maven-3.6+-blue)
